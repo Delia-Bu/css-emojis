@@ -1,0 +1,42 @@
+#logo_wrapper {
+  background-color: #02203c;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  gap: 50px;
+  margin-top: 50px;
+  padding-right: 10px;
+}
+
+#logo {
+  width: 10px;
+  height: 10px;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo::before,
+#logo::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 100px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+#logo::before {
+  transform: rotate(45deg);
+}
+#logo::after {
+  transform: rotate(-45deg);
+}
+
+h1 {
+  color: white;
+  font-family: monospace;
+  font-size: 48px;
+}
